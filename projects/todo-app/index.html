@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List App</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="app-wrapper">
+      <header>
+        <h1>Todo List</h1>
+        <a href="../../Index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Torna al Portfolio</a>
+      </header>
+      
+      <div class="input-section">
+        <input type="text" id="taskInput" placeholder="Aggiungi un nuovo task...">
+        <button id="addBtn"><i class="fas fa-plus"></i></button>
+      </div>
+      
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">Tutti</button>
+        <button class="filter-btn" data-filter="active">Attivi</button>
+        <button class="filter-btn" data-filter="completed">Completati</button>
+      </div>
+      
+      <ul id="taskList" class="task-list">
+        <!-- I task verranno aggiunti qui dinamicamente -->
+      </ul>
+      
+      <div class="task-stats">
+        <span id="taskCount">0 task rimasti</span>
+        <button id="clearCompletedBtn">Cancella completati</button>
+      </div>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>

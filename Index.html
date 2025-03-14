@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="it" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Gabriele Antonacci</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="container">
+        <div class="nav-header">
+          <div class="logo">
+            <a href="#home">Antonacci</a>
+          </div>
+          <div class="menu-toggle" id="menu-toggle">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#home" data-translate="home">Home</a></li>
+          <li><a href="#projects" data-translate="projects">Progetti</a></li>
+          <li><a href="#skills" data-translate="skills">Competenze</a></li>
+          <li><a href="#contact" data-translate="contact">Contatti</a></li>
+          <li class="language-selector">
+            <select id="language-select" aria-label="Seleziona lingua">
+              <option value="it" selected>🇮🇹 Italiano</option>
+              <option value="en">🇬🇧 English</option>
+              <option value="es">🇪🇸 Español</option>
+              <option value="fr">🇫🇷 Français</option>
+              <option value="de">🇩🇪 Deutsch</option>
+            </select>
+          </li>
+          <li>
+            <div class="toggle-switch">
+              <label class="switch-label">
+                <input type="checkbox" class="checkbox" id="theme-toggle">
+                <span class="slider"></span>
+              </label>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-content" data-aos="fade-up">
+        <h1 class="hero-title" data-translate="hero-title">Ciao, sono Gabriele Antonacci</h1>
+        <p class="hero-sub" data-translate="hero-sub">Sviluppatore di Python, Java, HTML, CSS e JavaScript</p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary" data-translate="discover-projects">Scopri i Progetti</a>
+          <a href="#contact" class="btn btn-secondary" data-translate="contact-me">Contattami</a>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <i class="fas fa-chevron-down"></i>
+        <span data-translate="scroll">Scorri</span>
+      </div>
+    </section>
+    
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up" data-translate="recent-projects">Progetti Recenti</h2>
+        <div class="projects-grid" data-aos="fade-up">
+          <div class="project-card">
+            <div class="project-info">
+              <h3 data-translate="todo-app-title">Todo List App</h3>
+              <p data-translate="todo-app-desc">Applicazione per la gestione dei task realizzata con React e Firebase.</p>
+              <div class="project-links">
+                <a href="projects/todo-app/index.html" class="btn btn-primary" data-translate="demo">Demo</a>
+                <a href="#" class="btn btn-secondary" data-translate="code">Codice</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-info">
+              <h3 data-translate="calculator-title">Calcolatrice Web</h3>
+              <p data-translate="calculator-desc">Una calcolatrice interattiva realizzata con HTML, CSS e JavaScript.</p>
+              <div class="project-links">
+                <a href="projects/calculator/index.html" class="btn btn-primary" data-translate="demo">Demo</a>
+                <a href="#" class="btn btn-secondary" data-translate="code">Codice</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-info">
+              <h3 data-translate="social-analytics-title">Analisi Social Media</h3>
+              <p data-translate="social-analytics-desc">Piattaforma di analisi dei social media con integrazione di ChatGPT-4.</p>
+              <div class="project-links">
+                <a href="../Analisi_Social/frontend/public/index.html" class="btn btn-primary" data-translate="demo">Demo</a>
+                <a href="#" class="btn btn-secondary" data-translate="code">Codice</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="skills" class="skills">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up" data-translate="technical-skills">Competenze Tecniche</h2>
+        <div class="skills-grid" data-aos="fade-up">
+          <div class="skill-card">
+            <i class="fab fa-html5 skill-icon"></i>
+            <h3>HTML</h3>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 97%;"></div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <i class="fab fa-css3-alt skill-icon"></i>
+            <h3>CSS</h3>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 92%;"></div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <i class="fab fa-js skill-icon"></i>
+            <h3>JavaScript</h3>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 89%;"></div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <i class="fab fa-python skill-icon"></i>
+            <h3>Python</h3>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 94%;"></div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <i class="fas fa-code skill-icon"></i>
+            <h3>C</h3>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 75%;"></div>
+            </div>
+          </div>
+          <div class="skill-card">
+            <i class="fas fa-code skill-icon"></i>
+            <h3>C++</h3>
+            <div class="skill-bar">
+              <div class="skill-level" style="width: 70%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up" data-translate="contact-title">Contattami</h2>
+        <form class="contact-form" data-aos="fade-up">
+          <div class="form-group">
+            <input type="text" data-translate-placeholder="name" placeholder="Nome" required>
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Email" required>
+          </div>
+          <div class="form-group">
+            <textarea data-translate-placeholder="message" placeholder="Messaggio" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" data-translate="send-message">Invia Messaggio</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Gabriele Antonacci. Tutti i diritti riservati.</p>
+    </div>
+  </footer>
+  
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="translations.js"></script>
+  <script src="translator.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

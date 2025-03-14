@@ -1,0 +1,158 @@
+:root {
+  --primary-color: #4a90e2;
+  --secondary-color: #50c9c3;
+  --text-color: #333;
+  --light-gray: #f5f5f5;
+  --gray: #e0e0e0;
+  --dark-gray: #888;
+  --white: #fff;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --border-radius: 8px;
+  
+  --btn-number: #f8f9fa;
+  --btn-function: #e9ecef;
+  --btn-operator: #4a90e2;
+  --btn-equals: #50c9c3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  color: var(--text-color);
+}
+
+.container {
+  width: 100%;
+  max-width: 360px;
+}
+
+.calculator-wrapper {
+  background: var(--white);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+header {
+  padding: 20px;
+  background: var(--primary-color);
+  color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.back-btn {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.calculator {
+  padding: 20px;
+}
+
+.display {
+  background: var(--light-gray);
+  padding: 20px;
+  border-radius: var(--border-radius);
+  margin-bottom: 20px;
+  text-align: right;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.previous-operand {
+  color: var(--dark-gray);
+  font-size: 1rem;
+  min-height: 24px;
+  margin-bottom: 5px;
+}
+
+.current-operand {
+  font-size: 2rem;
+  font-weight: 600;
+  word-break: break-all;
+}
+
+.buttons-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.btn {
+  border: none;
+  border-radius: var(--border-radius);
+  padding: 15px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+.number {
+  background: var(--btn-number);
+}
+
+.function {
+  background: var(--btn-function);
+  font-weight: 600;
+}
+
+.operator {
+  background: var(--btn-operator);
+  color: var(--white);
+  font-weight: 600;
+}
+
+.equals {
+  background: var(--btn-equals);
+  color: var(--white);
+  font-weight: 600;
+  grid-column: span 2;
+}
+
+@media (max-width: 400px) {
+  .btn {
+    padding: 12px;
+    font-size: 1rem;
+  }
+  
+  .display {
+    padding: 15px;
+    min-height: 80px;
+  }
+  
+  .current-operand {
+    font-size: 1.5rem;
+  }
+}
